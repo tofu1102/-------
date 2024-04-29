@@ -1,6 +1,7 @@
 from collections import deque
 from copy import deepcopy
 import graphviz
+import random
 
 COLOR_CODE = [
     '#1f77b4',
@@ -82,7 +83,6 @@ class Graph():
         return sol
     
     def visualize(self, recolorble_set):
-        print(recolorble_set)
         sol = self.solution_space(recolorble_set)
         g = graphviz.Graph(format='pdf', filename='test')
         g.attr(compound = 'true', fontname="MS Gothic")
@@ -115,14 +115,31 @@ class Graph():
         E = {(i,i+1) for i in range(1,V)}
         return cls(V, E, color)
     
+    @classmethod
+    def random_tree(cls, V, color):
+        """
+        たまに描画がバグる
+        """
+        if V <= 2:
+            return cls.path(V,color)
+        E = set()
+        E.add((1,2))
+        for v in {i for i in range(3,V+1)}:
+            E.add((v,random.randint(1,v-1)))
+        print(E)
+        return cls(V,E,color)
+    
 class Coloring(tuple):
+    """
+    0-indexだとちょっと都合が悪いから1-indexにするだけ
+    """
     def __getitem__(self, key):
         return super().__getitem__(key - 1)
 
         
 def main():
-    G = Graph.path(5,3)
-    G.visualize({(1,2),(2,3)})
+    G = Graph.random_tree(6,4)
+    G.visualize({(1,2),(3,1),(4,1)})
     
 
 if __name__ == "__main__":
