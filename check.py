@@ -2,6 +2,7 @@ from collections import deque
 from copy import deepcopy
 import graphviz
 import random
+from itertools import combinations
 
 COLOR_CODE = [
     '#1f77b4',
@@ -129,6 +130,18 @@ class Graph():
         print(E)
         return cls(V,E,color)
     
+    @classmethod
+    def random_graph(cls, V, color, ratio = 0.5):
+        """
+        辺がratioの確率で引かれているグラフ
+        """
+        E = set()
+        for u,v in combinations(range(1,V+1),2):
+            if ratio > random.random():
+                E.add((u,v))
+        print(E)
+        return cls(V,E,color)
+    
 class Coloring(tuple):
     """
     0-indexだとちょっと都合が悪いから1-indexにするだけ
@@ -138,8 +151,8 @@ class Coloring(tuple):
 
         
 def main():
-    G = Graph.random_tree(6,4)
-    G.visualize({(1,2),(3,1),(4,1)})
+    G = Graph.random_graph(8,4,0.3)
+    G.visualize({(1,2),(1,4),(1,3),(2,4)})
     
 
 if __name__ == "__main__":
