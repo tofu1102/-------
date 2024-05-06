@@ -34,6 +34,11 @@ class Graph():
             self.adj_list[v].add(u)
         self.colorings = set(self.get_colorings(Coloring((None for _ in range(V)))))
     
+    def components_size(self, recolorble_set):
+        sol = self.solution_space(recolorble_set)
+        for i, (component, edges) in enumerate(sol):
+            print(f"Component{i}:{len(component)}")
+    
     def get_colorings(self, coloring):
         ret = []
         uncolored = {i+1 for i,v in enumerate(coloring) if v == None}
@@ -142,6 +147,17 @@ class Graph():
         print(E)
         return cls(V,E,color)
     
+    @classmethod
+    def cycle(cls, V, color):
+        """
+        頂点数Vのサイクルを生成する
+        """
+        E = {(i,i+1) for i in range(1,V)}
+        E.add((1,V))
+        return cls(V, E, color)
+
+
+
 class Coloring(tuple):
     """
     0-indexだとちょっと都合が悪いから1-indexにするだけ
@@ -151,7 +167,7 @@ class Coloring(tuple):
 
         
 def main():
-    G = Graph.random_graph(8,4,0.3)
+    G = Graph(8,{(1,2),(2,3),(3,4),(4,5),(5,6),(6,1),(7,1),(8,3)},4)
     G.visualize({(1,2),(1,4),(1,3),(2,4)})
     
 
