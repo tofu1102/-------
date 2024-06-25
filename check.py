@@ -18,7 +18,7 @@ COLOR_CODE = [
     ]
 
 class Graph():
-    def __init__(self, V:int, E:set[tuple[int,int]], color:int) -> None:
+    def __init__(self, V:int, E:set[tuple[int,int]], color:int, colorList = None) -> None:
         """
         頂点:1,...,V
         辺:隣接リスト
@@ -29,6 +29,12 @@ class Graph():
         self.adj_list = {v:set() for v in range(1,V+1)}
         self.edge_list = E
         self.color = color
+
+        if colorList == None:
+            self.colorList = {i:{c for c in range(1, self.color + 1)} for i in self.V}
+        else:
+            self.colorList = colorList
+        
         for u,v in E:
             self.adj_list[u].add(v)
             self.adj_list[v].add(u)
@@ -45,7 +51,7 @@ class Graph():
         if not uncolored:
             return [coloring]
         v = uncolored.pop()
-        for c in range(1,self.color+1):
+        for c in self.colorList[v]:
             for w in self.adj_list[v]:
                 if coloring[w] == c:
                     break
@@ -76,7 +82,7 @@ class Graph():
             while q:
                 current_coloring = q.popleft()
                 for v in self.V:
-                    for c in recolorble[current_coloring[v]]:
+                    for c in recolorble[current_coloring[v]] & self.colorList[v]:
                         new_coloring = list(current_coloring)
                         new_coloring[v-1] = c
                         new_coloring = Coloring(new_coloring)
@@ -155,6 +161,11 @@ class Graph():
         E = {(i,i+1) for i in range(1,V)}
         E.add((1,V))
         return cls(V, E, color)
+    @classmethod
+    def binary_tree(cls, height, color):
+        V = pow(2,height + 1) - 1
+        E = [{i, i//2} for i in range(1, V + 1) if i // 2 > 0]
+        return cls(V, E, color)
 
 
 
@@ -167,8 +178,8 @@ class Coloring(tuple):
 
         
 def main():
-    G = Graph(8,{(1,2),(2,3),(3,4),(4,5),(5,6),(6,1),(7,1),(8,3)},4)
-    G.visualize({(1,2),(1,4),(1,3),(2,4)})
+    G = Graph(3, {(1,2),(2,3)}, 4)
+    G.visualize({(1,2), (2,3), (3,4), (4, 1)})
     
 
 if __name__ == "__main__":
