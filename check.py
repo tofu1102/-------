@@ -18,7 +18,7 @@ COLOR_CODE = [
     ]
 
 class Graph():
-    def __init__(self, V:int, E:set[tuple[int,int]], color:int, colorList = None) -> None:
+    def __init__(self, V:int, E:set[tuple[int,int]], color:int, recolorbleSet, colorList = None) -> None:
         """
         頂点:1,...,V
         辺:隣接リスト
@@ -29,6 +29,7 @@ class Graph():
         self.adj_list = {v:set() for v in range(1,V+1)}
         self.edge_list = E
         self.color = color
+        self.recolorbleSet = recolorbleSet
 
         if colorList == None:
             self.colorList = {i:{c for c in range(1, self.color + 1)} for i in self.V}
@@ -40,7 +41,8 @@ class Graph():
             self.adj_list[v].add(u)
         self.colorings = set(self.get_colorings(Coloring((None for _ in range(V)))))
     
-    def components_size(self, recolorble_set):
+    def components_size(self):
+        recolorble_set = self.recolorbleSet
         sol = self.solution_space(recolorble_set)
         for i, (component, edges) in enumerate(sol):
             print(f"Component{i}:{len(component)}")
@@ -62,11 +64,12 @@ class Graph():
                 ret+=self.get_colorings(new_coloring)
         return ret
     
-    def solution_space(self, recolorble_set):
+    def solution_space(self):
         """
         解空間を連結成分ごとに列挙
         """
         #扱いやすいようにrecolorble_setを隣接リストの形に変更
+        recolorble_set = self.recolorbleSet
         recolorble = {i:set() for i in range(1,self.color + 1)}
         for c1, c2 in recolorble_set:
             recolorble[c1].add(c2)
@@ -94,8 +97,9 @@ class Graph():
             sol.append((component, edges))
         return sol
     
-    def visualize(self, recolorble_set):
-        sol = self.solution_space(recolorble_set)
+    def visualize(self):
+        recolorble_set = self.recolorbleSet
+        sol = self.solution_space()
         g = graphviz.Graph(format='pdf', filename='test')
         g.attr(compound = 'true', fontname="MS Gothic")
 
@@ -128,18 +132,38 @@ class Graph():
         return cls(V, E, color)
     
     @classmethod
-    def random_tree(cls, V, color):
+    def random_tree(cls, V, color, recolorbleSet, colorList: bool = False, ratio = 0.5):
         """
         たまに描画がバグる
         """
+        recolorble = {i:set() for i in range(1, color + 1)}
+        for c1, c2 in recolorbleSet:
+            recolorble[c1].add(c2)
+            recolorble[c2].add(c1)
         if V <= 2:
             return cls.path(V,color)
         E = set()
         E.add((1,2))
         for v in {i for i in range(3,V+1)}:
             E.add((v,random.randint(1,v-1)))
+        if colorList:
+            colorList = {i:set() for i in range(1, V + 1)}
+            for v in range(1, V + 1):
+                q = [random.choice(list(range(1, color + 1)))]
+                visited = set(q)
+                while q:
+                    c = q.pop(0)
+                    colorList[v].add(c)
+                    for nc in recolorble[c] - visited:
+                        if random.random() < ratio:
+                            q.append(nc)
+                        visited.add(nc)
+
+        else:
+            colorList = {i:set(range(1, color + 1)) for i in range(1, V + 1)}
         print(E)
-        return cls(V,E,color)
+        print(colorList)
+        return cls(V, E, color, recolorbleSet, colorList)
     
     @classmethod
     def random_graph(cls, V, color, ratio = 0.5):
@@ -178,8 +202,8 @@ class Coloring(tuple):
 
         
 def main():
-    G = Graph(3, {(1,2),(2,3)}, 4)
-    G.visualize({(1,2), (2,3), (3,4), (4, 1)})
+    G = Graph.random_tree(6, 6, {(1,2), (2,3), (2,4), (4,5), (3,6)}, True, 0.4)
+    G.visualize()
     
 
 if __name__ == "__main__":

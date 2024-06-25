@@ -5,299 +5,718 @@ graph {
 		2 [label="" fillcolor="#2ca02c" style=filled]
 		3 [label="" fillcolor="#d62728" style=filled]
 		4 [label="" fillcolor="#9467bd" style=filled]
+		5 [label="" fillcolor="#8c564b" style=filled]
+		6 [label="" fillcolor="#e377c2" style=filled]
 		2 -- 3
+		2 -- 4
 		1 -- 2
-		4 -- 1
-		3 -- 4
+		4 -- 5
+		3 -- 6
 		label="Recolorbility Graph"
 	}
-	"1_(4, 2, 4)" -- "1_(1, 2, 4)" [lhead=cluster124 ltail=cluster424]
-	"1_(4, 2, 4)" -- "1_(3, 2, 4)" [lhead=cluster324 ltail=cluster424]
-	"1_(4, 2, 4)" -- "1_(4, 1, 4)" [lhead=cluster414 ltail=cluster424]
-	"1_(4, 2, 4)" -- "1_(4, 3, 4)" [lhead=cluster434 ltail=cluster424]
-	"1_(4, 2, 4)" -- "1_(4, 2, 1)" [lhead=cluster421 ltail=cluster424]
-	"1_(4, 2, 4)" -- "1_(4, 2, 3)" [lhead=cluster423 ltail=cluster424]
-	"1_(1, 2, 4)" -- "1_(1, 3, 4)" [lhead=cluster134 ltail=cluster124]
-	"1_(1, 2, 4)" -- "1_(1, 2, 1)" [lhead=cluster121 ltail=cluster124]
-	"1_(1, 2, 4)" -- "1_(1, 2, 3)" [lhead=cluster123 ltail=cluster124]
-	"1_(3, 2, 4)" -- "1_(3, 1, 4)" [lhead=cluster314 ltail=cluster324]
-	"1_(3, 2, 4)" -- "1_(3, 2, 1)" [lhead=cluster321 ltail=cluster324]
-	"1_(3, 2, 4)" -- "1_(3, 2, 3)" [lhead=cluster323 ltail=cluster324]
-	"1_(4, 1, 4)" -- "1_(4, 1, 3)" [lhead=cluster413 ltail=cluster414]
-	"1_(4, 3, 4)" -- "1_(4, 3, 1)" [lhead=cluster431 ltail=cluster434]
-	"1_(1, 3, 4)" -- "1_(2, 3, 4)" [lhead=cluster234 ltail=cluster134]
-	"1_(1, 3, 4)" -- "1_(1, 3, 1)" [lhead=cluster131 ltail=cluster134]
-	"1_(3, 1, 4)" -- "1_(2, 1, 4)" [lhead=cluster214 ltail=cluster314]
-	"1_(3, 1, 4)" -- "1_(3, 1, 3)" [lhead=cluster313 ltail=cluster314]
-	"1_(4, 1, 3)" -- "1_(4, 1, 2)" [lhead=cluster412 ltail=cluster413]
-	"1_(4, 3, 1)" -- "1_(4, 3, 2)" [lhead=cluster432 ltail=cluster431]
-	"1_(2, 3, 4)" -- "1_(2, 3, 1)" [lhead=cluster231 ltail=cluster234]
-	"1_(1, 3, 1)" -- "1_(1, 4, 1)" [lhead=cluster141 ltail=cluster131]
-	"1_(1, 3, 1)" -- "1_(1, 3, 2)" [lhead=cluster132 ltail=cluster131]
-	"1_(2, 1, 4)" -- "1_(2, 1, 3)" [lhead=cluster213 ltail=cluster214]
-	"1_(3, 1, 3)" -- "1_(3, 4, 3)" [lhead=cluster343 ltail=cluster313]
-	"1_(3, 1, 3)" -- "1_(3, 1, 2)" [lhead=cluster312 ltail=cluster313]
-	"1_(2, 3, 1)" -- "1_(2, 4, 1)" [lhead=cluster241 ltail=cluster231]
-	"1_(2, 3, 1)" -- "1_(2, 3, 2)" [lhead=cluster232 ltail=cluster231]
-	"1_(1, 4, 1)" -- "1_(1, 4, 2)" [lhead=cluster142 ltail=cluster141]
-	"1_(2, 1, 3)" -- "1_(2, 4, 3)" [lhead=cluster243 ltail=cluster213]
-	"1_(2, 1, 3)" -- "1_(2, 1, 2)" [lhead=cluster212 ltail=cluster213]
-	"1_(3, 4, 3)" -- "1_(3, 4, 2)" [lhead=cluster342 ltail=cluster343]
-	"1_(2, 4, 1)" -- "1_(3, 4, 1)" [lhead=cluster341 ltail=cluster241]
-	"1_(2, 4, 1)" -- "1_(2, 4, 2)" [lhead=cluster242 ltail=cluster241]
-	"1_(1, 4, 2)" -- "1_(1, 4, 3)" [lhead=cluster143 ltail=cluster142]
+	"1_(3, 6, 1, 2, 5, 4)" -- "1_(2, 6, 1, 2, 5, 4)" [lhead=cluster261254 ltail=cluster361254]
+	"1_(3, 6, 1, 2, 5, 4)" -- "1_(3, 6, 1, 4, 5, 4)" [lhead=cluster361454 ltail=cluster361254]
+	"1_(3, 6, 1, 2, 5, 4)" -- "1_(3, 6, 1, 2, 4, 4)" [lhead=cluster361244 ltail=cluster361254]
+	"1_(3, 6, 1, 2, 5, 4)" -- "1_(3, 6, 1, 2, 5, 5)" [lhead=cluster361255 ltail=cluster361254]
+	"1_(2, 6, 1, 2, 5, 4)" -- "1_(2, 6, 1, 4, 5, 4)" [lhead=cluster261454 ltail=cluster261254]
+	"1_(2, 6, 1, 2, 5, 4)" -- "1_(2, 6, 1, 2, 4, 4)" [lhead=cluster261244 ltail=cluster261254]
+	"1_(2, 6, 1, 2, 5, 4)" -- "1_(2, 6, 1, 2, 5, 5)" [lhead=cluster261255 ltail=cluster261254]
+	"1_(3, 6, 1, 4, 5, 4)" -- "1_(3, 6, 2, 4, 5, 4)" [lhead=cluster362454 ltail=cluster361454]
+	"1_(3, 6, 1, 4, 5, 4)" -- "1_(3, 6, 1, 4, 5, 5)" [lhead=cluster361455 ltail=cluster361454]
+	"1_(3, 6, 1, 2, 4, 4)" -- "1_(3, 6, 1, 2, 4, 5)" [lhead=cluster361245 ltail=cluster361244]
+	"1_(2, 6, 1, 4, 5, 4)" -- "1_(2, 6, 1, 4, 5, 5)" [lhead=cluster261455 ltail=cluster261454]
+	"1_(2, 6, 1, 2, 4, 4)" -- "1_(2, 6, 1, 2, 4, 5)" [lhead=cluster261245 ltail=cluster261244]
+	"1_(2, 6, 1, 2, 5, 5)" -- "1_(4, 6, 1, 2, 5, 5)" [lhead=cluster461255 ltail=cluster261255]
+	"1_(3, 6, 2, 4, 5, 4)" -- "1_(3, 6, 2, 4, 5, 5)" [lhead=cluster362455 ltail=cluster362454]
+	"1_(2, 6, 1, 4, 5, 5)" -- "1_(4, 6, 1, 4, 5, 5)" [lhead=cluster461455 ltail=cluster261455]
+	"1_(2, 6, 1, 2, 4, 5)" -- "1_(4, 6, 1, 2, 4, 5)" [lhead=cluster461245 ltail=cluster261245]
+	"1_(4, 6, 1, 4, 5, 5)" -- "1_(4, 6, 2, 4, 5, 5)" [lhead=cluster462455 ltail=cluster461455]
+	"1_(4, 6, 2, 4, 5, 5)" -- "1_(4, 6, 3, 4, 5, 5)" [lhead=cluster463455 ltail=cluster462455]
+	"1_(4, 6, 3, 4, 5, 5)" -- "1_(2, 6, 3, 4, 5, 5)" [lhead=cluster263455 ltail=cluster463455]
+	"1_(4, 6, 3, 4, 5, 5)" -- "1_(4, 6, 3, 2, 5, 5)" [lhead=cluster463255 ltail=cluster463455]
+	"1_(2, 6, 3, 4, 5, 5)" -- "1_(2, 6, 3, 2, 5, 5)" [lhead=cluster263255 ltail=cluster263455]
+	"1_(2, 6, 3, 4, 5, 5)" -- "1_(2, 6, 3, 4, 5, 4)" [lhead=cluster263454 ltail=cluster263455]
+	"1_(4, 6, 3, 2, 5, 5)" -- "1_(4, 6, 3, 1, 5, 5)" [lhead=cluster463155 ltail=cluster463255]
+	"1_(4, 6, 3, 2, 5, 5)" -- "1_(4, 6, 3, 2, 4, 5)" [lhead=cluster463245 ltail=cluster463255]
+	"1_(2, 6, 3, 2, 5, 5)" -- "1_(2, 6, 3, 1, 5, 5)" [lhead=cluster263155 ltail=cluster263255]
+	"1_(2, 6, 3, 2, 5, 5)" -- "1_(2, 6, 3, 2, 4, 5)" [lhead=cluster263245 ltail=cluster263255]
+	"1_(2, 6, 3, 2, 5, 5)" -- "1_(2, 6, 3, 2, 5, 4)" [lhead=cluster263254 ltail=cluster263255]
+	"1_(4, 6, 3, 1, 5, 5)" -- "1_(4, 6, 2, 1, 5, 5)" [lhead=cluster462155 ltail=cluster463155]
+	"1_(4, 6, 3, 1, 5, 5)" -- "1_(4, 6, 3, 1, 4, 5)" [lhead=cluster463145 ltail=cluster463155]
+	"1_(2, 6, 3, 1, 5, 5)" -- "1_(2, 6, 3, 1, 4, 5)" [lhead=cluster263145 ltail=cluster263155]
+	"1_(2, 6, 3, 1, 5, 5)" -- "1_(2, 6, 3, 1, 5, 4)" [lhead=cluster263154 ltail=cluster263155]
+	"1_(2, 6, 3, 2, 4, 5)" -- "1_(2, 6, 3, 2, 4, 4)" [lhead=cluster263244 ltail=cluster263245]
+	"1_(4, 6, 2, 1, 5, 5)" -- "1_(4, 6, 2, 1, 4, 5)" [lhead=cluster462145 ltail=cluster462155]
+	"1_(2, 6, 3, 1, 4, 5)" -- "1_(2, 6, 3, 1, 4, 4)" [lhead=cluster263144 ltail=cluster263145]
 	subgraph cluster0 {
-		subgraph cluster424 {
-			"1_(4, 2, 4)" [label=1 fillcolor="#9467bd" style=filled]
-			"2_(4, 2, 4)" [label=2 fillcolor="#2ca02c" style=filled]
-			"3_(4, 2, 4)" [label=3 fillcolor="#9467bd" style=filled]
-			"2_(4, 2, 4)" -- "3_(4, 2, 4)"
-			"1_(4, 2, 4)" -- "2_(4, 2, 4)"
+		subgraph cluster361254 {
+			"1_(3, 6, 1, 2, 5, 4)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 1, 2, 5, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 1, 2, 5, 4)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(3, 6, 1, 2, 5, 4)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(3, 6, 1, 2, 5, 4)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(3, 6, 1, 2, 5, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(3, 6, 1, 2, 5, 4)" -- "2_(3, 6, 1, 2, 5, 4)"
+			"4_(3, 6, 1, 2, 5, 4)" -- "3_(3, 6, 1, 2, 5, 4)"
+			"3_(3, 6, 1, 2, 5, 4)" -- "1_(3, 6, 1, 2, 5, 4)"
+			"6_(3, 6, 1, 2, 5, 4)" -- "1_(3, 6, 1, 2, 5, 4)"
+			"5_(3, 6, 1, 2, 5, 4)" -- "4_(3, 6, 1, 2, 5, 4)"
 		}
-		subgraph cluster213 {
-			"1_(2, 1, 3)" [label=1 fillcolor="#2ca02c" style=filled]
-			"2_(2, 1, 3)" [label=2 fillcolor="#ff7f0e" style=filled]
-			"3_(2, 1, 3)" [label=3 fillcolor="#d62728" style=filled]
-			"2_(2, 1, 3)" -- "3_(2, 1, 3)"
-			"1_(2, 1, 3)" -- "2_(2, 1, 3)"
+		subgraph cluster361454 {
+			"1_(3, 6, 1, 4, 5, 4)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 1, 4, 5, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 1, 4, 5, 4)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(3, 6, 1, 4, 5, 4)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(3, 6, 1, 4, 5, 4)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(3, 6, 1, 4, 5, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(3, 6, 1, 4, 5, 4)" -- "2_(3, 6, 1, 4, 5, 4)"
+			"4_(3, 6, 1, 4, 5, 4)" -- "3_(3, 6, 1, 4, 5, 4)"
+			"3_(3, 6, 1, 4, 5, 4)" -- "1_(3, 6, 1, 4, 5, 4)"
+			"6_(3, 6, 1, 4, 5, 4)" -- "1_(3, 6, 1, 4, 5, 4)"
+			"5_(3, 6, 1, 4, 5, 4)" -- "4_(3, 6, 1, 4, 5, 4)"
 		}
-		subgraph cluster421 {
-			"1_(4, 2, 1)" [label=1 fillcolor="#9467bd" style=filled]
-			"2_(4, 2, 1)" [label=2 fillcolor="#2ca02c" style=filled]
-			"3_(4, 2, 1)" [label=3 fillcolor="#ff7f0e" style=filled]
-			"2_(4, 2, 1)" -- "3_(4, 2, 1)"
-			"1_(4, 2, 1)" -- "2_(4, 2, 1)"
+		subgraph cluster463455 {
+			"1_(4, 6, 3, 4, 5, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 3, 4, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 3, 4, 5, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(4, 6, 3, 4, 5, 5)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(4, 6, 3, 4, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(4, 6, 3, 4, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 3, 4, 5, 5)" -- "2_(4, 6, 3, 4, 5, 5)"
+			"4_(4, 6, 3, 4, 5, 5)" -- "3_(4, 6, 3, 4, 5, 5)"
+			"3_(4, 6, 3, 4, 5, 5)" -- "1_(4, 6, 3, 4, 5, 5)"
+			"6_(4, 6, 3, 4, 5, 5)" -- "1_(4, 6, 3, 4, 5, 5)"
+			"5_(4, 6, 3, 4, 5, 5)" -- "4_(4, 6, 3, 4, 5, 5)"
 		}
-		subgraph cluster321 {
-			"1_(3, 2, 1)" [label=1 fillcolor="#d62728" style=filled]
-			"2_(3, 2, 1)" [label=2 fillcolor="#2ca02c" style=filled]
-			"3_(3, 2, 1)" [label=3 fillcolor="#ff7f0e" style=filled]
-			"2_(3, 2, 1)" -- "3_(3, 2, 1)"
-			"1_(3, 2, 1)" -- "2_(3, 2, 1)"
+		subgraph cluster361245 {
+			"1_(3, 6, 1, 2, 4, 5)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 1, 2, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 1, 2, 4, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(3, 6, 1, 2, 4, 5)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(3, 6, 1, 2, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(3, 6, 1, 2, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(3, 6, 1, 2, 4, 5)" -- "2_(3, 6, 1, 2, 4, 5)"
+			"4_(3, 6, 1, 2, 4, 5)" -- "3_(3, 6, 1, 2, 4, 5)"
+			"3_(3, 6, 1, 2, 4, 5)" -- "1_(3, 6, 1, 2, 4, 5)"
+			"6_(3, 6, 1, 2, 4, 5)" -- "1_(3, 6, 1, 2, 4, 5)"
+			"5_(3, 6, 1, 2, 4, 5)" -- "4_(3, 6, 1, 2, 4, 5)"
 		}
-		subgraph cluster324 {
-			"1_(3, 2, 4)" [label=1 fillcolor="#d62728" style=filled]
-			"2_(3, 2, 4)" [label=2 fillcolor="#2ca02c" style=filled]
-			"3_(3, 2, 4)" [label=3 fillcolor="#9467bd" style=filled]
-			"2_(3, 2, 4)" -- "3_(3, 2, 4)"
-			"1_(3, 2, 4)" -- "2_(3, 2, 4)"
+		subgraph cluster261244 {
+			"1_(2, 6, 1, 2, 4, 4)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 1, 2, 4, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 1, 2, 4, 4)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(2, 6, 1, 2, 4, 4)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(2, 6, 1, 2, 4, 4)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(2, 6, 1, 2, 4, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(2, 6, 1, 2, 4, 4)" -- "2_(2, 6, 1, 2, 4, 4)"
+			"4_(2, 6, 1, 2, 4, 4)" -- "3_(2, 6, 1, 2, 4, 4)"
+			"3_(2, 6, 1, 2, 4, 4)" -- "1_(2, 6, 1, 2, 4, 4)"
+			"6_(2, 6, 1, 2, 4, 4)" -- "1_(2, 6, 1, 2, 4, 4)"
+			"5_(2, 6, 1, 2, 4, 4)" -- "4_(2, 6, 1, 2, 4, 4)"
 		}
-		subgraph cluster312 {
-			"1_(3, 1, 2)" [label=1 fillcolor="#d62728" style=filled]
-			"2_(3, 1, 2)" [label=2 fillcolor="#ff7f0e" style=filled]
-			"3_(3, 1, 2)" [label=3 fillcolor="#2ca02c" style=filled]
-			"2_(3, 1, 2)" -- "3_(3, 1, 2)"
-			"1_(3, 1, 2)" -- "2_(3, 1, 2)"
+		subgraph cluster462455 {
+			"1_(4, 6, 2, 4, 5, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 2, 4, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 2, 4, 5, 5)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(4, 6, 2, 4, 5, 5)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(4, 6, 2, 4, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(4, 6, 2, 4, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 2, 4, 5, 5)" -- "2_(4, 6, 2, 4, 5, 5)"
+			"4_(4, 6, 2, 4, 5, 5)" -- "3_(4, 6, 2, 4, 5, 5)"
+			"3_(4, 6, 2, 4, 5, 5)" -- "1_(4, 6, 2, 4, 5, 5)"
+			"6_(4, 6, 2, 4, 5, 5)" -- "1_(4, 6, 2, 4, 5, 5)"
+			"5_(4, 6, 2, 4, 5, 5)" -- "4_(4, 6, 2, 4, 5, 5)"
 		}
-		subgraph cluster142 {
-			"1_(1, 4, 2)" [label=1 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 4, 2)" [label=2 fillcolor="#9467bd" style=filled]
-			"3_(1, 4, 2)" [label=3 fillcolor="#2ca02c" style=filled]
-			"2_(1, 4, 2)" -- "3_(1, 4, 2)"
-			"1_(1, 4, 2)" -- "2_(1, 4, 2)"
+		subgraph cluster263145 {
+			"1_(2, 6, 3, 1, 4, 5)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 1, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 1, 4, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 1, 4, 5)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(2, 6, 3, 1, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(2, 6, 3, 1, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(2, 6, 3, 1, 4, 5)" -- "2_(2, 6, 3, 1, 4, 5)"
+			"4_(2, 6, 3, 1, 4, 5)" -- "3_(2, 6, 3, 1, 4, 5)"
+			"3_(2, 6, 3, 1, 4, 5)" -- "1_(2, 6, 3, 1, 4, 5)"
+			"6_(2, 6, 3, 1, 4, 5)" -- "1_(2, 6, 3, 1, 4, 5)"
+			"5_(2, 6, 3, 1, 4, 5)" -- "4_(2, 6, 3, 1, 4, 5)"
 		}
-		subgraph cluster341 {
-			"1_(3, 4, 1)" [label=1 fillcolor="#d62728" style=filled]
-			"2_(3, 4, 1)" [label=2 fillcolor="#9467bd" style=filled]
-			"3_(3, 4, 1)" [label=3 fillcolor="#ff7f0e" style=filled]
-			"2_(3, 4, 1)" -- "3_(3, 4, 1)"
-			"1_(3, 4, 1)" -- "2_(3, 4, 1)"
+		subgraph cluster263154 {
+			"1_(2, 6, 3, 1, 5, 4)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 1, 5, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 1, 5, 4)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 1, 5, 4)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(2, 6, 3, 1, 5, 4)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(2, 6, 3, 1, 5, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(2, 6, 3, 1, 5, 4)" -- "2_(2, 6, 3, 1, 5, 4)"
+			"4_(2, 6, 3, 1, 5, 4)" -- "3_(2, 6, 3, 1, 5, 4)"
+			"3_(2, 6, 3, 1, 5, 4)" -- "1_(2, 6, 3, 1, 5, 4)"
+			"6_(2, 6, 3, 1, 5, 4)" -- "1_(2, 6, 3, 1, 5, 4)"
+			"5_(2, 6, 3, 1, 5, 4)" -- "4_(2, 6, 3, 1, 5, 4)"
 		}
-		subgraph cluster412 {
-			"1_(4, 1, 2)" [label=1 fillcolor="#9467bd" style=filled]
-			"2_(4, 1, 2)" [label=2 fillcolor="#ff7f0e" style=filled]
-			"3_(4, 1, 2)" [label=3 fillcolor="#2ca02c" style=filled]
-			"2_(4, 1, 2)" -- "3_(4, 1, 2)"
-			"1_(4, 1, 2)" -- "2_(4, 1, 2)"
+		subgraph cluster263245 {
+			"1_(2, 6, 3, 2, 4, 5)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 2, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 2, 4, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 2, 4, 5)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(2, 6, 3, 2, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(2, 6, 3, 2, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(2, 6, 3, 2, 4, 5)" -- "2_(2, 6, 3, 2, 4, 5)"
+			"4_(2, 6, 3, 2, 4, 5)" -- "3_(2, 6, 3, 2, 4, 5)"
+			"3_(2, 6, 3, 2, 4, 5)" -- "1_(2, 6, 3, 2, 4, 5)"
+			"6_(2, 6, 3, 2, 4, 5)" -- "1_(2, 6, 3, 2, 4, 5)"
+			"5_(2, 6, 3, 2, 4, 5)" -- "4_(2, 6, 3, 2, 4, 5)"
 		}
-		subgraph cluster242 {
-			"1_(2, 4, 2)" [label=1 fillcolor="#2ca02c" style=filled]
-			"2_(2, 4, 2)" [label=2 fillcolor="#9467bd" style=filled]
-			"3_(2, 4, 2)" [label=3 fillcolor="#2ca02c" style=filled]
-			"2_(2, 4, 2)" -- "3_(2, 4, 2)"
-			"1_(2, 4, 2)" -- "2_(2, 4, 2)"
+		subgraph cluster463245 {
+			"1_(4, 6, 3, 2, 4, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 3, 2, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 3, 2, 4, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(4, 6, 3, 2, 4, 5)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(4, 6, 3, 2, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(4, 6, 3, 2, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 3, 2, 4, 5)" -- "2_(4, 6, 3, 2, 4, 5)"
+			"4_(4, 6, 3, 2, 4, 5)" -- "3_(4, 6, 3, 2, 4, 5)"
+			"3_(4, 6, 3, 2, 4, 5)" -- "1_(4, 6, 3, 2, 4, 5)"
+			"6_(4, 6, 3, 2, 4, 5)" -- "1_(4, 6, 3, 2, 4, 5)"
+			"5_(4, 6, 3, 2, 4, 5)" -- "4_(4, 6, 3, 2, 4, 5)"
 		}
-		subgraph cluster432 {
-			"1_(4, 3, 2)" [label=1 fillcolor="#9467bd" style=filled]
-			"2_(4, 3, 2)" [label=2 fillcolor="#d62728" style=filled]
-			"3_(4, 3, 2)" [label=3 fillcolor="#2ca02c" style=filled]
-			"2_(4, 3, 2)" -- "3_(4, 3, 2)"
-			"1_(4, 3, 2)" -- "2_(4, 3, 2)"
+		subgraph cluster263254 {
+			"1_(2, 6, 3, 2, 5, 4)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 2, 5, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 2, 5, 4)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 2, 5, 4)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(2, 6, 3, 2, 5, 4)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(2, 6, 3, 2, 5, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(2, 6, 3, 2, 5, 4)" -- "2_(2, 6, 3, 2, 5, 4)"
+			"4_(2, 6, 3, 2, 5, 4)" -- "3_(2, 6, 3, 2, 5, 4)"
+			"3_(2, 6, 3, 2, 5, 4)" -- "1_(2, 6, 3, 2, 5, 4)"
+			"6_(2, 6, 3, 2, 5, 4)" -- "1_(2, 6, 3, 2, 5, 4)"
+			"5_(2, 6, 3, 2, 5, 4)" -- "4_(2, 6, 3, 2, 5, 4)"
 		}
-		subgraph cluster212 {
-			"1_(2, 1, 2)" [label=1 fillcolor="#2ca02c" style=filled]
-			"2_(2, 1, 2)" [label=2 fillcolor="#ff7f0e" style=filled]
-			"3_(2, 1, 2)" [label=3 fillcolor="#2ca02c" style=filled]
-			"2_(2, 1, 2)" -- "3_(2, 1, 2)"
-			"1_(2, 1, 2)" -- "2_(2, 1, 2)"
+		subgraph cluster463145 {
+			"1_(4, 6, 3, 1, 4, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 3, 1, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 3, 1, 4, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(4, 6, 3, 1, 4, 5)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(4, 6, 3, 1, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(4, 6, 3, 1, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 3, 1, 4, 5)" -- "2_(4, 6, 3, 1, 4, 5)"
+			"4_(4, 6, 3, 1, 4, 5)" -- "3_(4, 6, 3, 1, 4, 5)"
+			"3_(4, 6, 3, 1, 4, 5)" -- "1_(4, 6, 3, 1, 4, 5)"
+			"6_(4, 6, 3, 1, 4, 5)" -- "1_(4, 6, 3, 1, 4, 5)"
+			"5_(4, 6, 3, 1, 4, 5)" -- "4_(4, 6, 3, 1, 4, 5)"
 		}
-		subgraph cluster423 {
-			"1_(4, 2, 3)" [label=1 fillcolor="#9467bd" style=filled]
-			"2_(4, 2, 3)" [label=2 fillcolor="#2ca02c" style=filled]
-			"3_(4, 2, 3)" [label=3 fillcolor="#d62728" style=filled]
-			"2_(4, 2, 3)" -- "3_(4, 2, 3)"
-			"1_(4, 2, 3)" -- "2_(4, 2, 3)"
+		subgraph cluster461245 {
+			"1_(4, 6, 1, 2, 4, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 1, 2, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 1, 2, 4, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(4, 6, 1, 2, 4, 5)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(4, 6, 1, 2, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(4, 6, 1, 2, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 1, 2, 4, 5)" -- "2_(4, 6, 1, 2, 4, 5)"
+			"4_(4, 6, 1, 2, 4, 5)" -- "3_(4, 6, 1, 2, 4, 5)"
+			"3_(4, 6, 1, 2, 4, 5)" -- "1_(4, 6, 1, 2, 4, 5)"
+			"6_(4, 6, 1, 2, 4, 5)" -- "1_(4, 6, 1, 2, 4, 5)"
+			"5_(4, 6, 1, 2, 4, 5)" -- "4_(4, 6, 1, 2, 4, 5)"
 		}
-		subgraph cluster124 {
-			"1_(1, 2, 4)" [label=1 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 2, 4)" [label=2 fillcolor="#2ca02c" style=filled]
-			"3_(1, 2, 4)" [label=3 fillcolor="#9467bd" style=filled]
-			"2_(1, 2, 4)" -- "3_(1, 2, 4)"
-			"1_(1, 2, 4)" -- "2_(1, 2, 4)"
+		subgraph cluster462155 {
+			"1_(4, 6, 2, 1, 5, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 2, 1, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 2, 1, 5, 5)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(4, 6, 2, 1, 5, 5)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(4, 6, 2, 1, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(4, 6, 2, 1, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 2, 1, 5, 5)" -- "2_(4, 6, 2, 1, 5, 5)"
+			"4_(4, 6, 2, 1, 5, 5)" -- "3_(4, 6, 2, 1, 5, 5)"
+			"3_(4, 6, 2, 1, 5, 5)" -- "1_(4, 6, 2, 1, 5, 5)"
+			"6_(4, 6, 2, 1, 5, 5)" -- "1_(4, 6, 2, 1, 5, 5)"
+			"5_(4, 6, 2, 1, 5, 5)" -- "4_(4, 6, 2, 1, 5, 5)"
 		}
-		subgraph cluster141 {
-			"1_(1, 4, 1)" [label=1 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 4, 1)" [label=2 fillcolor="#9467bd" style=filled]
-			"3_(1, 4, 1)" [label=3 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 4, 1)" -- "3_(1, 4, 1)"
-			"1_(1, 4, 1)" -- "2_(1, 4, 1)"
+		subgraph cluster461455 {
+			"1_(4, 6, 1, 4, 5, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 1, 4, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 1, 4, 5, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(4, 6, 1, 4, 5, 5)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(4, 6, 1, 4, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(4, 6, 1, 4, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 1, 4, 5, 5)" -- "2_(4, 6, 1, 4, 5, 5)"
+			"4_(4, 6, 1, 4, 5, 5)" -- "3_(4, 6, 1, 4, 5, 5)"
+			"3_(4, 6, 1, 4, 5, 5)" -- "1_(4, 6, 1, 4, 5, 5)"
+			"6_(4, 6, 1, 4, 5, 5)" -- "1_(4, 6, 1, 4, 5, 5)"
+			"5_(4, 6, 1, 4, 5, 5)" -- "4_(4, 6, 1, 4, 5, 5)"
 		}
-		subgraph cluster121 {
-			"1_(1, 2, 1)" [label=1 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 2, 1)" [label=2 fillcolor="#2ca02c" style=filled]
-			"3_(1, 2, 1)" [label=3 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 2, 1)" -- "3_(1, 2, 1)"
-			"1_(1, 2, 1)" -- "2_(1, 2, 1)"
+		subgraph cluster361244 {
+			"1_(3, 6, 1, 2, 4, 4)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 1, 2, 4, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 1, 2, 4, 4)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(3, 6, 1, 2, 4, 4)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(3, 6, 1, 2, 4, 4)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(3, 6, 1, 2, 4, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(3, 6, 1, 2, 4, 4)" -- "2_(3, 6, 1, 2, 4, 4)"
+			"4_(3, 6, 1, 2, 4, 4)" -- "3_(3, 6, 1, 2, 4, 4)"
+			"3_(3, 6, 1, 2, 4, 4)" -- "1_(3, 6, 1, 2, 4, 4)"
+			"6_(3, 6, 1, 2, 4, 4)" -- "1_(3, 6, 1, 2, 4, 4)"
+			"5_(3, 6, 1, 2, 4, 4)" -- "4_(3, 6, 1, 2, 4, 4)"
 		}
-		subgraph cluster314 {
-			"1_(3, 1, 4)" [label=1 fillcolor="#d62728" style=filled]
-			"2_(3, 1, 4)" [label=2 fillcolor="#ff7f0e" style=filled]
-			"3_(3, 1, 4)" [label=3 fillcolor="#9467bd" style=filled]
-			"2_(3, 1, 4)" -- "3_(3, 1, 4)"
-			"1_(3, 1, 4)" -- "2_(3, 1, 4)"
+		subgraph cluster261455 {
+			"1_(2, 6, 1, 4, 5, 5)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 1, 4, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 1, 4, 5, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(2, 6, 1, 4, 5, 5)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(2, 6, 1, 4, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(2, 6, 1, 4, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(2, 6, 1, 4, 5, 5)" -- "2_(2, 6, 1, 4, 5, 5)"
+			"4_(2, 6, 1, 4, 5, 5)" -- "3_(2, 6, 1, 4, 5, 5)"
+			"3_(2, 6, 1, 4, 5, 5)" -- "1_(2, 6, 1, 4, 5, 5)"
+			"6_(2, 6, 1, 4, 5, 5)" -- "1_(2, 6, 1, 4, 5, 5)"
+			"5_(2, 6, 1, 4, 5, 5)" -- "4_(2, 6, 1, 4, 5, 5)"
 		}
-		subgraph cluster343 {
-			"1_(3, 4, 3)" [label=1 fillcolor="#d62728" style=filled]
-			"2_(3, 4, 3)" [label=2 fillcolor="#9467bd" style=filled]
-			"3_(3, 4, 3)" [label=3 fillcolor="#d62728" style=filled]
-			"2_(3, 4, 3)" -- "3_(3, 4, 3)"
-			"1_(3, 4, 3)" -- "2_(3, 4, 3)"
+		subgraph cluster263144 {
+			"1_(2, 6, 3, 1, 4, 4)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 1, 4, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 1, 4, 4)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 1, 4, 4)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(2, 6, 3, 1, 4, 4)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(2, 6, 3, 1, 4, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(2, 6, 3, 1, 4, 4)" -- "2_(2, 6, 3, 1, 4, 4)"
+			"4_(2, 6, 3, 1, 4, 4)" -- "3_(2, 6, 3, 1, 4, 4)"
+			"3_(2, 6, 3, 1, 4, 4)" -- "1_(2, 6, 3, 1, 4, 4)"
+			"6_(2, 6, 3, 1, 4, 4)" -- "1_(2, 6, 3, 1, 4, 4)"
+			"5_(2, 6, 3, 1, 4, 4)" -- "4_(2, 6, 3, 1, 4, 4)"
 		}
-		subgraph cluster323 {
-			"1_(3, 2, 3)" [label=1 fillcolor="#d62728" style=filled]
-			"2_(3, 2, 3)" [label=2 fillcolor="#2ca02c" style=filled]
-			"3_(3, 2, 3)" [label=3 fillcolor="#d62728" style=filled]
-			"2_(3, 2, 3)" -- "3_(3, 2, 3)"
-			"1_(3, 2, 3)" -- "2_(3, 2, 3)"
+		subgraph cluster261255 {
+			"1_(2, 6, 1, 2, 5, 5)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 1, 2, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 1, 2, 5, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(2, 6, 1, 2, 5, 5)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(2, 6, 1, 2, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(2, 6, 1, 2, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(2, 6, 1, 2, 5, 5)" -- "2_(2, 6, 1, 2, 5, 5)"
+			"4_(2, 6, 1, 2, 5, 5)" -- "3_(2, 6, 1, 2, 5, 5)"
+			"3_(2, 6, 1, 2, 5, 5)" -- "1_(2, 6, 1, 2, 5, 5)"
+			"6_(2, 6, 1, 2, 5, 5)" -- "1_(2, 6, 1, 2, 5, 5)"
+			"5_(2, 6, 1, 2, 5, 5)" -- "4_(2, 6, 1, 2, 5, 5)"
 		}
-		subgraph cluster132 {
-			"1_(1, 3, 2)" [label=1 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 3, 2)" [label=2 fillcolor="#d62728" style=filled]
-			"3_(1, 3, 2)" [label=3 fillcolor="#2ca02c" style=filled]
-			"2_(1, 3, 2)" -- "3_(1, 3, 2)"
-			"1_(1, 3, 2)" -- "2_(1, 3, 2)"
+		subgraph cluster362455 {
+			"1_(3, 6, 2, 4, 5, 5)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 2, 4, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 2, 4, 5, 5)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(3, 6, 2, 4, 5, 5)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(3, 6, 2, 4, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(3, 6, 2, 4, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(3, 6, 2, 4, 5, 5)" -- "2_(3, 6, 2, 4, 5, 5)"
+			"4_(3, 6, 2, 4, 5, 5)" -- "3_(3, 6, 2, 4, 5, 5)"
+			"3_(3, 6, 2, 4, 5, 5)" -- "1_(3, 6, 2, 4, 5, 5)"
+			"6_(3, 6, 2, 4, 5, 5)" -- "1_(3, 6, 2, 4, 5, 5)"
+			"5_(3, 6, 2, 4, 5, 5)" -- "4_(3, 6, 2, 4, 5, 5)"
 		}
-		subgraph cluster414 {
-			"1_(4, 1, 4)" [label=1 fillcolor="#9467bd" style=filled]
-			"2_(4, 1, 4)" [label=2 fillcolor="#ff7f0e" style=filled]
-			"3_(4, 1, 4)" [label=3 fillcolor="#9467bd" style=filled]
-			"2_(4, 1, 4)" -- "3_(4, 1, 4)"
-			"1_(4, 1, 4)" -- "2_(4, 1, 4)"
+		subgraph cluster263455 {
+			"1_(2, 6, 3, 4, 5, 5)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 4, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 4, 5, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 4, 5, 5)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(2, 6, 3, 4, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(2, 6, 3, 4, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(2, 6, 3, 4, 5, 5)" -- "2_(2, 6, 3, 4, 5, 5)"
+			"4_(2, 6, 3, 4, 5, 5)" -- "3_(2, 6, 3, 4, 5, 5)"
+			"3_(2, 6, 3, 4, 5, 5)" -- "1_(2, 6, 3, 4, 5, 5)"
+			"6_(2, 6, 3, 4, 5, 5)" -- "1_(2, 6, 3, 4, 5, 5)"
+			"5_(2, 6, 3, 4, 5, 5)" -- "4_(2, 6, 3, 4, 5, 5)"
 		}
-		subgraph cluster431 {
-			"1_(4, 3, 1)" [label=1 fillcolor="#9467bd" style=filled]
-			"2_(4, 3, 1)" [label=2 fillcolor="#d62728" style=filled]
-			"3_(4, 3, 1)" [label=3 fillcolor="#ff7f0e" style=filled]
-			"2_(4, 3, 1)" -- "3_(4, 3, 1)"
-			"1_(4, 3, 1)" -- "2_(4, 3, 1)"
+		subgraph cluster263244 {
+			"1_(2, 6, 3, 2, 4, 4)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 2, 4, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 2, 4, 4)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 2, 4, 4)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(2, 6, 3, 2, 4, 4)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(2, 6, 3, 2, 4, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(2, 6, 3, 2, 4, 4)" -- "2_(2, 6, 3, 2, 4, 4)"
+			"4_(2, 6, 3, 2, 4, 4)" -- "3_(2, 6, 3, 2, 4, 4)"
+			"3_(2, 6, 3, 2, 4, 4)" -- "1_(2, 6, 3, 2, 4, 4)"
+			"6_(2, 6, 3, 2, 4, 4)" -- "1_(2, 6, 3, 2, 4, 4)"
+			"5_(2, 6, 3, 2, 4, 4)" -- "4_(2, 6, 3, 2, 4, 4)"
 		}
-		subgraph cluster232 {
-			"1_(2, 3, 2)" [label=1 fillcolor="#2ca02c" style=filled]
-			"2_(2, 3, 2)" [label=2 fillcolor="#d62728" style=filled]
-			"3_(2, 3, 2)" [label=3 fillcolor="#2ca02c" style=filled]
-			"2_(2, 3, 2)" -- "3_(2, 3, 2)"
-			"1_(2, 3, 2)" -- "2_(2, 3, 2)"
+		subgraph cluster361455 {
+			"1_(3, 6, 1, 4, 5, 5)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 1, 4, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 1, 4, 5, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(3, 6, 1, 4, 5, 5)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(3, 6, 1, 4, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(3, 6, 1, 4, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(3, 6, 1, 4, 5, 5)" -- "2_(3, 6, 1, 4, 5, 5)"
+			"4_(3, 6, 1, 4, 5, 5)" -- "3_(3, 6, 1, 4, 5, 5)"
+			"3_(3, 6, 1, 4, 5, 5)" -- "1_(3, 6, 1, 4, 5, 5)"
+			"6_(3, 6, 1, 4, 5, 5)" -- "1_(3, 6, 1, 4, 5, 5)"
+			"5_(3, 6, 1, 4, 5, 5)" -- "4_(3, 6, 1, 4, 5, 5)"
 		}
-		subgraph cluster241 {
-			"1_(2, 4, 1)" [label=1 fillcolor="#2ca02c" style=filled]
-			"2_(2, 4, 1)" [label=2 fillcolor="#9467bd" style=filled]
-			"3_(2, 4, 1)" [label=3 fillcolor="#ff7f0e" style=filled]
-			"2_(2, 4, 1)" -- "3_(2, 4, 1)"
-			"1_(2, 4, 1)" -- "2_(2, 4, 1)"
+		subgraph cluster361255 {
+			"1_(3, 6, 1, 2, 5, 5)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 1, 2, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 1, 2, 5, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(3, 6, 1, 2, 5, 5)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(3, 6, 1, 2, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(3, 6, 1, 2, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(3, 6, 1, 2, 5, 5)" -- "2_(3, 6, 1, 2, 5, 5)"
+			"4_(3, 6, 1, 2, 5, 5)" -- "3_(3, 6, 1, 2, 5, 5)"
+			"3_(3, 6, 1, 2, 5, 5)" -- "1_(3, 6, 1, 2, 5, 5)"
+			"6_(3, 6, 1, 2, 5, 5)" -- "1_(3, 6, 1, 2, 5, 5)"
+			"5_(3, 6, 1, 2, 5, 5)" -- "4_(3, 6, 1, 2, 5, 5)"
 		}
-		subgraph cluster434 {
-			"1_(4, 3, 4)" [label=1 fillcolor="#9467bd" style=filled]
-			"2_(4, 3, 4)" [label=2 fillcolor="#d62728" style=filled]
-			"3_(4, 3, 4)" [label=3 fillcolor="#9467bd" style=filled]
-			"2_(4, 3, 4)" -- "3_(4, 3, 4)"
-			"1_(4, 3, 4)" -- "2_(4, 3, 4)"
+		subgraph cluster461255 {
+			"1_(4, 6, 1, 2, 5, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 1, 2, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 1, 2, 5, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(4, 6, 1, 2, 5, 5)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(4, 6, 1, 2, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(4, 6, 1, 2, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 1, 2, 5, 5)" -- "2_(4, 6, 1, 2, 5, 5)"
+			"4_(4, 6, 1, 2, 5, 5)" -- "3_(4, 6, 1, 2, 5, 5)"
+			"3_(4, 6, 1, 2, 5, 5)" -- "1_(4, 6, 1, 2, 5, 5)"
+			"6_(4, 6, 1, 2, 5, 5)" -- "1_(4, 6, 1, 2, 5, 5)"
+			"5_(4, 6, 1, 2, 5, 5)" -- "4_(4, 6, 1, 2, 5, 5)"
 		}
-		subgraph cluster214 {
-			"1_(2, 1, 4)" [label=1 fillcolor="#2ca02c" style=filled]
-			"2_(2, 1, 4)" [label=2 fillcolor="#ff7f0e" style=filled]
-			"3_(2, 1, 4)" [label=3 fillcolor="#9467bd" style=filled]
-			"2_(2, 1, 4)" -- "3_(2, 1, 4)"
-			"1_(2, 1, 4)" -- "2_(2, 1, 4)"
+		subgraph cluster261254 {
+			"1_(2, 6, 1, 2, 5, 4)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 1, 2, 5, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 1, 2, 5, 4)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(2, 6, 1, 2, 5, 4)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(2, 6, 1, 2, 5, 4)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(2, 6, 1, 2, 5, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(2, 6, 1, 2, 5, 4)" -- "2_(2, 6, 1, 2, 5, 4)"
+			"4_(2, 6, 1, 2, 5, 4)" -- "3_(2, 6, 1, 2, 5, 4)"
+			"3_(2, 6, 1, 2, 5, 4)" -- "1_(2, 6, 1, 2, 5, 4)"
+			"6_(2, 6, 1, 2, 5, 4)" -- "1_(2, 6, 1, 2, 5, 4)"
+			"5_(2, 6, 1, 2, 5, 4)" -- "4_(2, 6, 1, 2, 5, 4)"
 		}
-		subgraph cluster313 {
-			"1_(3, 1, 3)" [label=1 fillcolor="#d62728" style=filled]
-			"2_(3, 1, 3)" [label=2 fillcolor="#ff7f0e" style=filled]
-			"3_(3, 1, 3)" [label=3 fillcolor="#d62728" style=filled]
-			"2_(3, 1, 3)" -- "3_(3, 1, 3)"
-			"1_(3, 1, 3)" -- "2_(3, 1, 3)"
+		subgraph cluster463155 {
+			"1_(4, 6, 3, 1, 5, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 3, 1, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 3, 1, 5, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(4, 6, 3, 1, 5, 5)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(4, 6, 3, 1, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(4, 6, 3, 1, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 3, 1, 5, 5)" -- "2_(4, 6, 3, 1, 5, 5)"
+			"4_(4, 6, 3, 1, 5, 5)" -- "3_(4, 6, 3, 1, 5, 5)"
+			"3_(4, 6, 3, 1, 5, 5)" -- "1_(4, 6, 3, 1, 5, 5)"
+			"6_(4, 6, 3, 1, 5, 5)" -- "1_(4, 6, 3, 1, 5, 5)"
+			"5_(4, 6, 3, 1, 5, 5)" -- "4_(4, 6, 3, 1, 5, 5)"
 		}
-		subgraph cluster131 {
-			"1_(1, 3, 1)" [label=1 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 3, 1)" [label=2 fillcolor="#d62728" style=filled]
-			"3_(1, 3, 1)" [label=3 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 3, 1)" -- "3_(1, 3, 1)"
-			"1_(1, 3, 1)" -- "2_(1, 3, 1)"
+		subgraph cluster261454 {
+			"1_(2, 6, 1, 4, 5, 4)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 1, 4, 5, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 1, 4, 5, 4)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(2, 6, 1, 4, 5, 4)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(2, 6, 1, 4, 5, 4)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(2, 6, 1, 4, 5, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(2, 6, 1, 4, 5, 4)" -- "2_(2, 6, 1, 4, 5, 4)"
+			"4_(2, 6, 1, 4, 5, 4)" -- "3_(2, 6, 1, 4, 5, 4)"
+			"3_(2, 6, 1, 4, 5, 4)" -- "1_(2, 6, 1, 4, 5, 4)"
+			"6_(2, 6, 1, 4, 5, 4)" -- "1_(2, 6, 1, 4, 5, 4)"
+			"5_(2, 6, 1, 4, 5, 4)" -- "4_(2, 6, 1, 4, 5, 4)"
 		}
-		subgraph cluster123 {
-			"1_(1, 2, 3)" [label=1 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 2, 3)" [label=2 fillcolor="#2ca02c" style=filled]
-			"3_(1, 2, 3)" [label=3 fillcolor="#d62728" style=filled]
-			"2_(1, 2, 3)" -- "3_(1, 2, 3)"
-			"1_(1, 2, 3)" -- "2_(1, 2, 3)"
+		subgraph cluster261245 {
+			"1_(2, 6, 1, 2, 4, 5)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 1, 2, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 1, 2, 4, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(2, 6, 1, 2, 4, 5)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(2, 6, 1, 2, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(2, 6, 1, 2, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(2, 6, 1, 2, 4, 5)" -- "2_(2, 6, 1, 2, 4, 5)"
+			"4_(2, 6, 1, 2, 4, 5)" -- "3_(2, 6, 1, 2, 4, 5)"
+			"3_(2, 6, 1, 2, 4, 5)" -- "1_(2, 6, 1, 2, 4, 5)"
+			"6_(2, 6, 1, 2, 4, 5)" -- "1_(2, 6, 1, 2, 4, 5)"
+			"5_(2, 6, 1, 2, 4, 5)" -- "4_(2, 6, 1, 2, 4, 5)"
 		}
-		subgraph cluster134 {
-			"1_(1, 3, 4)" [label=1 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 3, 4)" [label=2 fillcolor="#d62728" style=filled]
-			"3_(1, 3, 4)" [label=3 fillcolor="#9467bd" style=filled]
-			"2_(1, 3, 4)" -- "3_(1, 3, 4)"
-			"1_(1, 3, 4)" -- "2_(1, 3, 4)"
+		subgraph cluster263155 {
+			"1_(2, 6, 3, 1, 5, 5)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 1, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 1, 5, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 1, 5, 5)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(2, 6, 3, 1, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(2, 6, 3, 1, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(2, 6, 3, 1, 5, 5)" -- "2_(2, 6, 3, 1, 5, 5)"
+			"4_(2, 6, 3, 1, 5, 5)" -- "3_(2, 6, 3, 1, 5, 5)"
+			"3_(2, 6, 3, 1, 5, 5)" -- "1_(2, 6, 3, 1, 5, 5)"
+			"6_(2, 6, 3, 1, 5, 5)" -- "1_(2, 6, 3, 1, 5, 5)"
+			"5_(2, 6, 3, 1, 5, 5)" -- "4_(2, 6, 3, 1, 5, 5)"
 		}
-		subgraph cluster342 {
-			"1_(3, 4, 2)" [label=1 fillcolor="#d62728" style=filled]
-			"2_(3, 4, 2)" [label=2 fillcolor="#9467bd" style=filled]
-			"3_(3, 4, 2)" [label=3 fillcolor="#2ca02c" style=filled]
-			"2_(3, 4, 2)" -- "3_(3, 4, 2)"
-			"1_(3, 4, 2)" -- "2_(3, 4, 2)"
+		subgraph cluster362454 {
+			"1_(3, 6, 2, 4, 5, 4)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 2, 4, 5, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 2, 4, 5, 4)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(3, 6, 2, 4, 5, 4)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(3, 6, 2, 4, 5, 4)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(3, 6, 2, 4, 5, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(3, 6, 2, 4, 5, 4)" -- "2_(3, 6, 2, 4, 5, 4)"
+			"4_(3, 6, 2, 4, 5, 4)" -- "3_(3, 6, 2, 4, 5, 4)"
+			"3_(3, 6, 2, 4, 5, 4)" -- "1_(3, 6, 2, 4, 5, 4)"
+			"6_(3, 6, 2, 4, 5, 4)" -- "1_(3, 6, 2, 4, 5, 4)"
+			"5_(3, 6, 2, 4, 5, 4)" -- "4_(3, 6, 2, 4, 5, 4)"
 		}
-		subgraph cluster143 {
-			"1_(1, 4, 3)" [label=1 fillcolor="#ff7f0e" style=filled]
-			"2_(1, 4, 3)" [label=2 fillcolor="#9467bd" style=filled]
-			"3_(1, 4, 3)" [label=3 fillcolor="#d62728" style=filled]
-			"2_(1, 4, 3)" -- "3_(1, 4, 3)"
-			"1_(1, 4, 3)" -- "2_(1, 4, 3)"
+		subgraph cluster462145 {
+			"1_(4, 6, 2, 1, 4, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 2, 1, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 2, 1, 4, 5)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(4, 6, 2, 1, 4, 5)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(4, 6, 2, 1, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(4, 6, 2, 1, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 2, 1, 4, 5)" -- "2_(4, 6, 2, 1, 4, 5)"
+			"4_(4, 6, 2, 1, 4, 5)" -- "3_(4, 6, 2, 1, 4, 5)"
+			"3_(4, 6, 2, 1, 4, 5)" -- "1_(4, 6, 2, 1, 4, 5)"
+			"6_(4, 6, 2, 1, 4, 5)" -- "1_(4, 6, 2, 1, 4, 5)"
+			"5_(4, 6, 2, 1, 4, 5)" -- "4_(4, 6, 2, 1, 4, 5)"
 		}
-		subgraph cluster234 {
-			"1_(2, 3, 4)" [label=1 fillcolor="#2ca02c" style=filled]
-			"2_(2, 3, 4)" [label=2 fillcolor="#d62728" style=filled]
-			"3_(2, 3, 4)" [label=3 fillcolor="#9467bd" style=filled]
-			"2_(2, 3, 4)" -- "3_(2, 3, 4)"
-			"1_(2, 3, 4)" -- "2_(2, 3, 4)"
+		subgraph cluster263255 {
+			"1_(2, 6, 3, 2, 5, 5)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 2, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 2, 5, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 2, 5, 5)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(2, 6, 3, 2, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(2, 6, 3, 2, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(2, 6, 3, 2, 5, 5)" -- "2_(2, 6, 3, 2, 5, 5)"
+			"4_(2, 6, 3, 2, 5, 5)" -- "3_(2, 6, 3, 2, 5, 5)"
+			"3_(2, 6, 3, 2, 5, 5)" -- "1_(2, 6, 3, 2, 5, 5)"
+			"6_(2, 6, 3, 2, 5, 5)" -- "1_(2, 6, 3, 2, 5, 5)"
+			"5_(2, 6, 3, 2, 5, 5)" -- "4_(2, 6, 3, 2, 5, 5)"
 		}
-		subgraph cluster413 {
-			"1_(4, 1, 3)" [label=1 fillcolor="#9467bd" style=filled]
-			"2_(4, 1, 3)" [label=2 fillcolor="#ff7f0e" style=filled]
-			"3_(4, 1, 3)" [label=3 fillcolor="#d62728" style=filled]
-			"2_(4, 1, 3)" -- "3_(4, 1, 3)"
-			"1_(4, 1, 3)" -- "2_(4, 1, 3)"
+		subgraph cluster463255 {
+			"1_(4, 6, 3, 2, 5, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 3, 2, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 3, 2, 5, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(4, 6, 3, 2, 5, 5)" [label=4 fillcolor="#2ca02c" style=filled]
+			"5_(4, 6, 3, 2, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(4, 6, 3, 2, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 3, 2, 5, 5)" -- "2_(4, 6, 3, 2, 5, 5)"
+			"4_(4, 6, 3, 2, 5, 5)" -- "3_(4, 6, 3, 2, 5, 5)"
+			"3_(4, 6, 3, 2, 5, 5)" -- "1_(4, 6, 3, 2, 5, 5)"
+			"6_(4, 6, 3, 2, 5, 5)" -- "1_(4, 6, 3, 2, 5, 5)"
+			"5_(4, 6, 3, 2, 5, 5)" -- "4_(4, 6, 3, 2, 5, 5)"
 		}
-		subgraph cluster243 {
-			"1_(2, 4, 3)" [label=1 fillcolor="#2ca02c" style=filled]
-			"2_(2, 4, 3)" [label=2 fillcolor="#9467bd" style=filled]
-			"3_(2, 4, 3)" [label=3 fillcolor="#d62728" style=filled]
-			"2_(2, 4, 3)" -- "3_(2, 4, 3)"
-			"1_(2, 4, 3)" -- "2_(2, 4, 3)"
+		subgraph cluster263454 {
+			"1_(2, 6, 3, 4, 5, 4)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 4, 5, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 4, 5, 4)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 4, 5, 4)" [label=4 fillcolor="#9467bd" style=filled]
+			"5_(2, 6, 3, 4, 5, 4)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(2, 6, 3, 4, 5, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(2, 6, 3, 4, 5, 4)" -- "2_(2, 6, 3, 4, 5, 4)"
+			"4_(2, 6, 3, 4, 5, 4)" -- "3_(2, 6, 3, 4, 5, 4)"
+			"3_(2, 6, 3, 4, 5, 4)" -- "1_(2, 6, 3, 4, 5, 4)"
+			"6_(2, 6, 3, 4, 5, 4)" -- "1_(2, 6, 3, 4, 5, 4)"
+			"5_(2, 6, 3, 4, 5, 4)" -- "4_(2, 6, 3, 4, 5, 4)"
 		}
-		subgraph cluster231 {
-			"1_(2, 3, 1)" [label=1 fillcolor="#2ca02c" style=filled]
-			"2_(2, 3, 1)" [label=2 fillcolor="#d62728" style=filled]
-			"3_(2, 3, 1)" [label=3 fillcolor="#ff7f0e" style=filled]
-			"2_(2, 3, 1)" -- "3_(2, 3, 1)"
-			"1_(2, 3, 1)" -- "2_(2, 3, 1)"
+		pencolor="#00ff00" penwidth=5
+	}
+	"1_(2, 6, 3, 5, 4, 5)" -- "1_(4, 6, 3, 5, 4, 5)" [lhead=cluster463545 ltail=cluster263545]
+	"1_(2, 6, 3, 5, 4, 5)" -- "1_(2, 6, 3, 5, 4, 4)" [lhead=cluster263544 ltail=cluster263545]
+	"1_(4, 6, 3, 5, 4, 5)" -- "1_(4, 6, 2, 5, 4, 5)" [lhead=cluster462545 ltail=cluster463545]
+	"1_(4, 6, 2, 5, 4, 5)" -- "1_(4, 6, 1, 5, 4, 5)" [lhead=cluster461545 ltail=cluster462545]
+	"1_(4, 6, 1, 5, 4, 5)" -- "1_(2, 6, 1, 5, 4, 5)" [lhead=cluster261545 ltail=cluster461545]
+	"1_(2, 6, 1, 5, 4, 5)" -- "1_(3, 6, 1, 5, 4, 5)" [lhead=cluster361545 ltail=cluster261545]
+	"1_(2, 6, 1, 5, 4, 5)" -- "1_(2, 6, 1, 5, 4, 4)" [lhead=cluster261544 ltail=cluster261545]
+	"1_(3, 6, 1, 5, 4, 5)" -- "1_(3, 6, 2, 5, 4, 5)" [lhead=cluster362545 ltail=cluster361545]
+	"1_(3, 6, 1, 5, 4, 5)" -- "1_(3, 6, 1, 5, 4, 4)" [lhead=cluster361544 ltail=cluster361545]
+	"1_(3, 6, 2, 5, 4, 5)" -- "1_(3, 6, 2, 5, 4, 4)" [lhead=cluster362544 ltail=cluster362545]
+	subgraph cluster1 {
+		subgraph cluster261544 {
+			"1_(2, 6, 1, 5, 4, 4)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 1, 5, 4, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 1, 5, 4, 4)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(2, 6, 1, 5, 4, 4)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(2, 6, 1, 5, 4, 4)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(2, 6, 1, 5, 4, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(2, 6, 1, 5, 4, 4)" -- "2_(2, 6, 1, 5, 4, 4)"
+			"4_(2, 6, 1, 5, 4, 4)" -- "3_(2, 6, 1, 5, 4, 4)"
+			"3_(2, 6, 1, 5, 4, 4)" -- "1_(2, 6, 1, 5, 4, 4)"
+			"6_(2, 6, 1, 5, 4, 4)" -- "1_(2, 6, 1, 5, 4, 4)"
+			"5_(2, 6, 1, 5, 4, 4)" -- "4_(2, 6, 1, 5, 4, 4)"
+		}
+		subgraph cluster263545 {
+			"1_(2, 6, 3, 5, 4, 5)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 5, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 5, 4, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 5, 4, 5)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(2, 6, 3, 5, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(2, 6, 3, 5, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(2, 6, 3, 5, 4, 5)" -- "2_(2, 6, 3, 5, 4, 5)"
+			"4_(2, 6, 3, 5, 4, 5)" -- "3_(2, 6, 3, 5, 4, 5)"
+			"3_(2, 6, 3, 5, 4, 5)" -- "1_(2, 6, 3, 5, 4, 5)"
+			"6_(2, 6, 3, 5, 4, 5)" -- "1_(2, 6, 3, 5, 4, 5)"
+			"5_(2, 6, 3, 5, 4, 5)" -- "4_(2, 6, 3, 5, 4, 5)"
+		}
+		subgraph cluster461545 {
+			"1_(4, 6, 1, 5, 4, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 1, 5, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 1, 5, 4, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(4, 6, 1, 5, 4, 5)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(4, 6, 1, 5, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(4, 6, 1, 5, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 1, 5, 4, 5)" -- "2_(4, 6, 1, 5, 4, 5)"
+			"4_(4, 6, 1, 5, 4, 5)" -- "3_(4, 6, 1, 5, 4, 5)"
+			"3_(4, 6, 1, 5, 4, 5)" -- "1_(4, 6, 1, 5, 4, 5)"
+			"6_(4, 6, 1, 5, 4, 5)" -- "1_(4, 6, 1, 5, 4, 5)"
+			"5_(4, 6, 1, 5, 4, 5)" -- "4_(4, 6, 1, 5, 4, 5)"
+		}
+		subgraph cluster362544 {
+			"1_(3, 6, 2, 5, 4, 4)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 2, 5, 4, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 2, 5, 4, 4)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(3, 6, 2, 5, 4, 4)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(3, 6, 2, 5, 4, 4)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(3, 6, 2, 5, 4, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(3, 6, 2, 5, 4, 4)" -- "2_(3, 6, 2, 5, 4, 4)"
+			"4_(3, 6, 2, 5, 4, 4)" -- "3_(3, 6, 2, 5, 4, 4)"
+			"3_(3, 6, 2, 5, 4, 4)" -- "1_(3, 6, 2, 5, 4, 4)"
+			"6_(3, 6, 2, 5, 4, 4)" -- "1_(3, 6, 2, 5, 4, 4)"
+			"5_(3, 6, 2, 5, 4, 4)" -- "4_(3, 6, 2, 5, 4, 4)"
+		}
+		subgraph cluster361545 {
+			"1_(3, 6, 1, 5, 4, 5)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 1, 5, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 1, 5, 4, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(3, 6, 1, 5, 4, 5)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(3, 6, 1, 5, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(3, 6, 1, 5, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(3, 6, 1, 5, 4, 5)" -- "2_(3, 6, 1, 5, 4, 5)"
+			"4_(3, 6, 1, 5, 4, 5)" -- "3_(3, 6, 1, 5, 4, 5)"
+			"3_(3, 6, 1, 5, 4, 5)" -- "1_(3, 6, 1, 5, 4, 5)"
+			"6_(3, 6, 1, 5, 4, 5)" -- "1_(3, 6, 1, 5, 4, 5)"
+			"5_(3, 6, 1, 5, 4, 5)" -- "4_(3, 6, 1, 5, 4, 5)"
+		}
+		subgraph cluster263544 {
+			"1_(2, 6, 3, 5, 4, 4)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 3, 5, 4, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 3, 5, 4, 4)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(2, 6, 3, 5, 4, 4)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(2, 6, 3, 5, 4, 4)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(2, 6, 3, 5, 4, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(2, 6, 3, 5, 4, 4)" -- "2_(2, 6, 3, 5, 4, 4)"
+			"4_(2, 6, 3, 5, 4, 4)" -- "3_(2, 6, 3, 5, 4, 4)"
+			"3_(2, 6, 3, 5, 4, 4)" -- "1_(2, 6, 3, 5, 4, 4)"
+			"6_(2, 6, 3, 5, 4, 4)" -- "1_(2, 6, 3, 5, 4, 4)"
+			"5_(2, 6, 3, 5, 4, 4)" -- "4_(2, 6, 3, 5, 4, 4)"
+		}
+		subgraph cluster462545 {
+			"1_(4, 6, 2, 5, 4, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 2, 5, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 2, 5, 4, 5)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(4, 6, 2, 5, 4, 5)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(4, 6, 2, 5, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(4, 6, 2, 5, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 2, 5, 4, 5)" -- "2_(4, 6, 2, 5, 4, 5)"
+			"4_(4, 6, 2, 5, 4, 5)" -- "3_(4, 6, 2, 5, 4, 5)"
+			"3_(4, 6, 2, 5, 4, 5)" -- "1_(4, 6, 2, 5, 4, 5)"
+			"6_(4, 6, 2, 5, 4, 5)" -- "1_(4, 6, 2, 5, 4, 5)"
+			"5_(4, 6, 2, 5, 4, 5)" -- "4_(4, 6, 2, 5, 4, 5)"
+		}
+		subgraph cluster261545 {
+			"1_(2, 6, 1, 5, 4, 5)" [label=1 fillcolor="#2ca02c" style=filled]
+			"2_(2, 6, 1, 5, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(2, 6, 1, 5, 4, 5)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(2, 6, 1, 5, 4, 5)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(2, 6, 1, 5, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(2, 6, 1, 5, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(2, 6, 1, 5, 4, 5)" -- "2_(2, 6, 1, 5, 4, 5)"
+			"4_(2, 6, 1, 5, 4, 5)" -- "3_(2, 6, 1, 5, 4, 5)"
+			"3_(2, 6, 1, 5, 4, 5)" -- "1_(2, 6, 1, 5, 4, 5)"
+			"6_(2, 6, 1, 5, 4, 5)" -- "1_(2, 6, 1, 5, 4, 5)"
+			"5_(2, 6, 1, 5, 4, 5)" -- "4_(2, 6, 1, 5, 4, 5)"
+		}
+		subgraph cluster463545 {
+			"1_(4, 6, 3, 5, 4, 5)" [label=1 fillcolor="#9467bd" style=filled]
+			"2_(4, 6, 3, 5, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(4, 6, 3, 5, 4, 5)" [label=3 fillcolor="#d62728" style=filled]
+			"4_(4, 6, 3, 5, 4, 5)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(4, 6, 3, 5, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(4, 6, 3, 5, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(4, 6, 3, 5, 4, 5)" -- "2_(4, 6, 3, 5, 4, 5)"
+			"4_(4, 6, 3, 5, 4, 5)" -- "3_(4, 6, 3, 5, 4, 5)"
+			"3_(4, 6, 3, 5, 4, 5)" -- "1_(4, 6, 3, 5, 4, 5)"
+			"6_(4, 6, 3, 5, 4, 5)" -- "1_(4, 6, 3, 5, 4, 5)"
+			"5_(4, 6, 3, 5, 4, 5)" -- "4_(4, 6, 3, 5, 4, 5)"
+		}
+		subgraph cluster361544 {
+			"1_(3, 6, 1, 5, 4, 4)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 1, 5, 4, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 1, 5, 4, 4)" [label=3 fillcolor="#ff7f0e" style=filled]
+			"4_(3, 6, 1, 5, 4, 4)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(3, 6, 1, 5, 4, 4)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(3, 6, 1, 5, 4, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(3, 6, 1, 5, 4, 4)" -- "2_(3, 6, 1, 5, 4, 4)"
+			"4_(3, 6, 1, 5, 4, 4)" -- "3_(3, 6, 1, 5, 4, 4)"
+			"3_(3, 6, 1, 5, 4, 4)" -- "1_(3, 6, 1, 5, 4, 4)"
+			"6_(3, 6, 1, 5, 4, 4)" -- "1_(3, 6, 1, 5, 4, 4)"
+			"5_(3, 6, 1, 5, 4, 4)" -- "4_(3, 6, 1, 5, 4, 4)"
+		}
+		subgraph cluster362545 {
+			"1_(3, 6, 2, 5, 4, 5)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 2, 5, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 2, 5, 4, 5)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(3, 6, 2, 5, 4, 5)" [label=4 fillcolor="#8c564b" style=filled]
+			"5_(3, 6, 2, 5, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(3, 6, 2, 5, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(3, 6, 2, 5, 4, 5)" -- "2_(3, 6, 2, 5, 4, 5)"
+			"4_(3, 6, 2, 5, 4, 5)" -- "3_(3, 6, 2, 5, 4, 5)"
+			"3_(3, 6, 2, 5, 4, 5)" -- "1_(3, 6, 2, 5, 4, 5)"
+			"6_(3, 6, 2, 5, 4, 5)" -- "1_(3, 6, 2, 5, 4, 5)"
+			"5_(3, 6, 2, 5, 4, 5)" -- "4_(3, 6, 2, 5, 4, 5)"
+		}
+		pencolor="#00ff00" penwidth=5
+	}
+	"1_(3, 6, 2, 1, 4, 5)" -- "1_(3, 6, 2, 1, 5, 5)" [lhead=cluster362155 ltail=cluster362145]
+	"1_(3, 6, 2, 1, 4, 5)" -- "1_(3, 6, 2, 1, 4, 4)" [lhead=cluster362144 ltail=cluster362145]
+	"1_(3, 6, 2, 1, 5, 5)" -- "1_(3, 6, 2, 1, 5, 4)" [lhead=cluster362154 ltail=cluster362155]
+	subgraph cluster2 {
+		subgraph cluster362155 {
+			"1_(3, 6, 2, 1, 5, 5)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 2, 1, 5, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 2, 1, 5, 5)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(3, 6, 2, 1, 5, 5)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(3, 6, 2, 1, 5, 5)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(3, 6, 2, 1, 5, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(3, 6, 2, 1, 5, 5)" -- "2_(3, 6, 2, 1, 5, 5)"
+			"4_(3, 6, 2, 1, 5, 5)" -- "3_(3, 6, 2, 1, 5, 5)"
+			"3_(3, 6, 2, 1, 5, 5)" -- "1_(3, 6, 2, 1, 5, 5)"
+			"6_(3, 6, 2, 1, 5, 5)" -- "1_(3, 6, 2, 1, 5, 5)"
+			"5_(3, 6, 2, 1, 5, 5)" -- "4_(3, 6, 2, 1, 5, 5)"
+		}
+		subgraph cluster362144 {
+			"1_(3, 6, 2, 1, 4, 4)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 2, 1, 4, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 2, 1, 4, 4)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(3, 6, 2, 1, 4, 4)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(3, 6, 2, 1, 4, 4)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(3, 6, 2, 1, 4, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(3, 6, 2, 1, 4, 4)" -- "2_(3, 6, 2, 1, 4, 4)"
+			"4_(3, 6, 2, 1, 4, 4)" -- "3_(3, 6, 2, 1, 4, 4)"
+			"3_(3, 6, 2, 1, 4, 4)" -- "1_(3, 6, 2, 1, 4, 4)"
+			"6_(3, 6, 2, 1, 4, 4)" -- "1_(3, 6, 2, 1, 4, 4)"
+			"5_(3, 6, 2, 1, 4, 4)" -- "4_(3, 6, 2, 1, 4, 4)"
+		}
+		subgraph cluster362145 {
+			"1_(3, 6, 2, 1, 4, 5)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 2, 1, 4, 5)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 2, 1, 4, 5)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(3, 6, 2, 1, 4, 5)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(3, 6, 2, 1, 4, 5)" [label=5 fillcolor="#9467bd" style=filled]
+			"6_(3, 6, 2, 1, 4, 5)" [label=6 fillcolor="#8c564b" style=filled]
+			"1_(3, 6, 2, 1, 4, 5)" -- "2_(3, 6, 2, 1, 4, 5)"
+			"4_(3, 6, 2, 1, 4, 5)" -- "3_(3, 6, 2, 1, 4, 5)"
+			"3_(3, 6, 2, 1, 4, 5)" -- "1_(3, 6, 2, 1, 4, 5)"
+			"6_(3, 6, 2, 1, 4, 5)" -- "1_(3, 6, 2, 1, 4, 5)"
+			"5_(3, 6, 2, 1, 4, 5)" -- "4_(3, 6, 2, 1, 4, 5)"
+		}
+		subgraph cluster362154 {
+			"1_(3, 6, 2, 1, 5, 4)" [label=1 fillcolor="#d62728" style=filled]
+			"2_(3, 6, 2, 1, 5, 4)" [label=2 fillcolor="#e377c2" style=filled]
+			"3_(3, 6, 2, 1, 5, 4)" [label=3 fillcolor="#2ca02c" style=filled]
+			"4_(3, 6, 2, 1, 5, 4)" [label=4 fillcolor="#ff7f0e" style=filled]
+			"5_(3, 6, 2, 1, 5, 4)" [label=5 fillcolor="#8c564b" style=filled]
+			"6_(3, 6, 2, 1, 5, 4)" [label=6 fillcolor="#9467bd" style=filled]
+			"1_(3, 6, 2, 1, 5, 4)" -- "2_(3, 6, 2, 1, 5, 4)"
+			"4_(3, 6, 2, 1, 5, 4)" -- "3_(3, 6, 2, 1, 5, 4)"
+			"3_(3, 6, 2, 1, 5, 4)" -- "1_(3, 6, 2, 1, 5, 4)"
+			"6_(3, 6, 2, 1, 5, 4)" -- "1_(3, 6, 2, 1, 5, 4)"
+			"5_(3, 6, 2, 1, 5, 4)" -- "4_(3, 6, 2, 1, 5, 4)"
 		}
 		pencolor="#00ff00" penwidth=5
 	}
